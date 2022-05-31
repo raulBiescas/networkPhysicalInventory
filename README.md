@@ -9,7 +9,7 @@ LIbraries to create visual representation and allow navigation across networks p
 - ISPdrawing: Base functions to draw floorplans and place elements on them.
 - labels.js: Functions for working with labels at equipment and panel ports.
 - navegacionRed: Functions to allow network navigation for different levels item selection.
-- netwForms: Forms to create new network elements.
+- netForms: Forms to create new network elements.
 - networkDescriptors.js: Functions to create network descriptors for each network level category.
 - networkElements.js: Functions to be activated when new network items are created.
 - networkInfo.js: Functions to display network maps based on OpenLayers
