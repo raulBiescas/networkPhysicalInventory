@@ -1,0 +1,170 @@
+.lineNetworkTable .lineaDatos
+{
+margin-left:65px;
+}
+
+.lineNetworkGroup
+{
+margin-bottom:10px;
+position:relative;
+border-bottom:1px solid #eee;
+padding-bottom:5px;
+}
+
+.lineNetworkGroup.Sites
+{
+margin-left:3px;
+}
+
+.lineNetworkGroup.Floors
+{
+margin-left:20px;
+}
+
+.lineNetworkGroup.Rooms
+{
+margin-left:40px;
+}
+
+.lineNetworkGroup.Racks
+{
+margin-left:60px;
+}
+
+.lineNetworkGroup .descriptorRedSecundario
+{
+padding-left:20px;
+}
+
+.hideGroupingNetwork
+{
+display:none;
+}
+
+.portReportTable .descriptorPanelPorts .descriptorRedSecundario
+{
+display:none;
+}
+
+.portReportTable .descriptorPanels .descriptorRedPrimario
+{
+display:none;
+}
+
+.circuitResultCell
+{
+width:40px;
+text-align:center;
+}
+
+.circuitResultLine
+{
+margin-bottom:10px;
+}
+
+.orderBlock
+{
+margin-top:15px;
+margin-bottom:15px;
+margin-left:5%;
+margin-right:5%;
+width: 90%;
+background-color: #CCCC99;
+}
+
+.listaNavegacion .lineaDatos
+{
+margin-top:8px;
+}
+
+.riserSideTitle
+{
+position:absolute;
+top:2px;
+color:white;
+background-color:navy;
+padding:2px;
+}
+
+.labelsTable td
+{
+padding-left:2px;
+padding-right:2px;
+border-right:1px solid white;
+border-left:1px solid white;
+border-top:1px solid white;
+border-bottom:1px solid white;
+}
+
+.labelFirstLine
+{
+border-top:1px solid white;
+}
+
+.labelEndLine
+{
+border-bottom:1px solid white;
+}
+
+.exportLabels
+{
+padding-left:40%;
+margin-bottom:10px;
+font-size:0.9em;
+color:yellow;
+cursor:pointer;
+}
+
+.networkReportLine
+{
+margin-top:10px;
+margin-bottom:10px;
+}
+
+.networkReportTitle
+{
+background-color:#eee;
+-moz-border-radius: 5px;
+border-radius: 5px;
+padding:2px 2px 2px 20px;
+margin-top:20px;
+color:purple;
+}
+
+.offnetIsolatedHide
+{
+display:none;
+}
+
+
+.navigationLeftArea
+{
+position:absolute;
+top:1%;
+left:1%;
+width:25%;
+height:98%;
+overflow:auto;
+border-right:1px solid #eee;
+}
+
+.navigationCentralArea
+{
+position:absolute;
+top:1%;
+left:27%;
+width:45%;
+height:98%;
+overflow:auto;
+border-right:1px solid #eee;
+}
+
+.navigationRightArea
+{
+position:absolute;
+top:1%;
+left:73%;
+width:26%;
+height:98%;
+overflow:auto;
+}

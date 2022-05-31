@@ -1,0 +1,1363 @@
+/*plano general sites*/
+.planta
+{
+width: 100%;
+position:relative;
+}
+
+.tituloPlanta
+{
+position:relative;
+text-align:center;
+font-size: 13px;
+}
+
+.tituloPlanta a
+{
+color: red;
+}
+
+.room
+{
+background-color: #ddd;
+text-align:center;
+}
+
+/*plano planta sin cuadricula*/
+
+.floorWrapper
+{
+width:100%;
+height:100%;
+position:relative;
+background-color:white;
+color:#333;
+}
+
+.areaPlanta
+{
+position:absolute;
+border:1px solid black;
+top:20px;
+left:20px;
+}
+
+.areaNorte
+{
+position:absolute;
+top:0px;
+right:-4px;
+width:30px;
+height:30px;
+}
+
+.botonRuler
+{
+width: 30px;
+height:19px;
+background: url(images/ruler.jpg) no-repeat center center;
+}
+
+.addressIcon
+{
+width: 16px;
+height:16px;
+background: url(images/address.png) no-repeat center center;
+}
+
+
+.botonRuler.rulerActive
+{
+background: url(images/rulerNo.jpg) no-repeat center center;
+}
+
+.norte0
+{background: url(images/north0.png) no-repeat center center;}
+
+.norte15
+{background: url(images/north15.png) no-repeat center center;}
+
+.norte30
+{background: url(images/north30.png) no-repeat center center;}
+
+.norte45
+{background: url(images/north45.png) no-repeat center center;}
+
+.norte60
+{background: url(images/north60.png) no-repeat center center;}
+
+.norte75
+{background: url(images/north75.png) no-repeat center center;}
+
+.norte90
+{background: url(images/north90.png) no-repeat center center;}
+
+.norte105
+{background: url(images/north105.png) no-repeat center center;}
+
+.norte120
+{background: url(images/north120.png) no-repeat center center;}
+
+.norte135
+{background: url(images/north135.png) no-repeat center center;}
+
+.norte345
+{background: url(images/north345.png) no-repeat center center;}
+.norte330
+{background: url(images/north330.png) no-repeat center center;}
+.norte315
+{background: url(images/north315.png) no-repeat center center;}
+
+.kitchen
+{background: url(images/kitchen.png) no-repeat center bottom;}
+
+.parking
+{background: url(images/parking.png) no-repeat center bottom;}
+
+.meetingRoom
+{background: url(images/meetingRoom.png) no-repeat center bottom;}
+
+.toilets
+{background: url(images/toilets.png) no-repeat center bottom;}
+
+.workoffice
+{background: url(images/workoffice.png) no-repeat center bottom;}
+
+.warehouse
+{background: url(images/warehouse.png) no-repeat center bottom;}
+
+.power
+{background: url(images/power.png) no-repeat center bottom;}
+
+.pumps
+{background: url(images/pumps.png) no-repeat center bottom;}
+
+.general
+{background: url(images/general.png) no-repeat center bottom;}
+
+.splicing
+{background: url(images/splicing.png) no-repeat center bottom;}
+
+.elevator
+{background: url(images/elevator.png) no-repeat center bottom;}
+
+.stairs
+{background: url(images/stairs.png) no-repeat center bottom;}
+
+.verticalelevator
+{background: url(images/elevator.png) no-repeat center center;}
+
+.verticalstairs
+{background: url(images/stairs.png) no-repeat center center;}
+
+.techRooms
+{background: url(images/techRooms.png) no-repeat center center;}
+
+
+.iconoAdd
+{
+margin-left:5px;
+width:20px;
+height:20px;
+float:left;
+cursor:pointer;
+}
+
+.extHorizontal
+{
+position:absolute;
+height:20px;
+left:20px;
+top:0px;
+}
+
+.extVertical
+{
+position:absolute;
+width:20px;
+top:20px;
+left:0px;
+}
+
+.numCoordenada
+{
+position:absolute;
+width:20px;
+height: 12px;
+font-size:10px;
+}
+
+.leyendaCuadricula
+{
+position:absolute;
+width:20px;
+height: 12px;
+font-size:8px;
+}
+
+.leyCuadResaltada
+{
+font-size:12px!important;
+color:red!important;
+}
+
+.extVertical .numCoordenada
+{
+left:2px;
+}
+
+.extVertical .leyendaCuadricula
+{
+left:2px;
+}
+
+.extHorizontal .numCoordenada
+{
+top:4px;
+}
+
+.extHorizontal .leyendaCuadricula
+{
+top:4px;
+}
+
+.roomInPlant
+{
+background-color: #eeeeee;
+}
+
+.vertical
+{
+background-color: #AAAAAA;
+}
+
+.roomInPlant.noTech
+{
+background-color: #ddffdd;
+border:1px solid navy;
+}
+
+.roomInPlant.techRoom
+{
+background-color: #ccccff;
+border:1px solid navy;
+}
+
+.roomInPlant.door
+{
+border:1px solid yellow;
+}
+
+
+.roomResaltada
+{
+border:2px solid #ffaaaa!important;
+}
+
+.roomSuperResaltada
+{
+z-index:110!important;
+border:2px solid #ffaaaa!important;
+background-color:purple!important;
+text-align:center!important;
+overflow:visible!important;
+}
+
+.roomSuperResaltada span
+{
+background-color:black;
+color:yellow;
+}
+
+
+.elementoPlanta
+{
+position:absolute;
+}
+
+.infoBuilding
+{
+z-index:100;
+}
+
+.elPlantaInfo
+{
+position:absolute;
+top:1px;
+left:1px;
+width:20px;
+height:20px;
+cursor:pointer;
+}
+
+.infoTechRoom
+{
+background: url(images/techRooms.png) no-repeat center center;
+}
+
+.elPlantaLayer
+{
+padding-left:27px;
+background: url(images/information.png) no-repeat 5px 0px;
+}
+
+.FireLayer
+{
+padding-left:27px;
+background: url(images/FIRE_SYSTEM.png) no-repeat 5px 0px;
+}
+
+.CoolingLayer
+{
+padding-left:27px;
+background: url(images/COOLING_HEATING.png) no-repeat 5px 0px;
+}
+
+.pared
+{
+position:absolute;
+cursor:pointer;
+z-index:100;
+}
+
+.muro
+{
+position:absolute;
+z-index:100;
+}
+
+.nuevaHabitacion
+{
+position:absolute;
+border:3px solid green;
+background-color: #DDFFDD;
+z-index:100;
+}
+
+.pared.horizontal
+{
+background-color: yellow;
+width:100%;
+height:3px;
+left:0px;
+}
+
+.pared.vertical
+{
+height:100%;
+width:3px;
+top:0px;
+background-color: yellow;
+}
+
+.muro.horizontal
+{
+background-color: green;
+height:3px;
+}
+
+.muro.vertical
+{
+width:3px;
+background-color: green;
+}
+
+.espacioPosicion
+{
+position:absolute;
+width:38%;
+top:0px;
+left:0px;
+height:98%;
+padding:1%;
+font-size:10px;
+line-height:14px;
+}
+
+.espacioAreas
+{
+position:absolute;
+width:68%;
+top:0px;
+left:40%;
+height:98%;
+padding:1%;
+font-size:10px;
+line-height:14px;
+}
+
+
+/*floors,suites*/
+
+.cuadriculaHorizontal
+{
+position:absolute;
+width:100%;
+left:0px;
+height:1px;
+z-index:2;
+border-top:1px dashed #666;
+}
+
+.cuadriculaVertical
+{
+position:absolute;
+height:100%;
+top:0px;
+width:1px;
+z-index:2;
+border-left:1px dashed #666;
+}
+
+.suite
+{
+position:absolute;
+background-color:#FFDDDD;
+z-index:1;
+}
+
+.suite.suiteResaltada
+{
+background-color:#FFBBBB;
+}
+
+.roomInPlant.box
+{
+border:1px solid #339933;
+cursor:pointer;
+}
+
+.roomInPlant.Firebox
+{
+background-color:red;
+}
+
+.roomInPlant.Coolingbox
+{
+background-color:purple;
+}
+
+.roomInPlant.otherCabinet
+{
+border:1px solid #BDBDBD;
+background-color:#F3F781;
+}
+
+.roomInPlant.useless
+{
+border:1px solid #BDBDBD;
+background-color:#BDBDBD;
+}
+
+.roomInPlant.PDFbox
+{
+background-color:#AC58FA;
+}
+
+.roomInPlant.Batteriesbox
+{
+background-color:#A050F0;
+}
+
+.cage
+{
+border-top:2px solid orange;
+border-left:2px solid orange;
+}
+
+.rack
+{
+position:absolute;
+width:100%;
+height:100%;
+background-color:#33CCCC;
+z-index:50;
+border:1px solid #339933;
+cursor:pointer;
+}
+
+.rack.rackResaltado
+{
+background-color:#330099;
+}
+
+.rackSuperResaltada
+{
+z-index:110!important;
+border:2px solid #ffaaaa!important;
+background-color:purple!important;
+text-align:center!important;
+overflow:visible!important;
+}
+
+.rackSuperResaltada span
+{
+background-color:black;
+color:yellow;
+}
+
+.miscRackSpace
+{
+background-color:#ccc!important;
+color:#444;
+vertical-align:center!important;
+font-size:10px!important;
+}
+
+
+.columnaUs
+{
+position: absolute;
+width:15px;
+top:0px;
+height:100%;
+left:0px;
+}
+
+.ulabel
+{
+height:14px;
+font-size:11px;
+color: #339933;
+padding-top: 2px;
+padding-left:2px;
+}
+
+.rackSlots
+{
+position: absolute;
+top:0px;
+height:100%;
+left:15px;
+right:0px;
+
+}
+
+.rackSlot
+{
+position:absolute;
+height:13px;
+top:0px;
+font-size:11px;
+padding-left:2px;
+padding-top: 1px;
+border:1px solid #339933;
+}
+
+.bloquePiso
+{
+position:relative;
+width:80%;
+margin-left:15%;
+height:30px;
+border-top:1px solid black;
+border-left:1px solid black;
+border-right:1px solid black;
+z-index:10;
+background-color:#f5f5f5;
+padding-left:5px;
+}
+
+.bloqueNivel
+{
+padding:1px 3px!important;
+background-color:navy;
+color:white;
+font-weight:bold;
+}
+
+.cielo
+{
+position:relative;
+width:100%;
+padding-top:20px;
+background-color:#eeeeff;
+border-bottom:2px solid green;
+}
+
+.suelo
+{
+position:relative;
+width:100%;
+padding-bottom:20px;
+background-color:brown;
+}
+
+.celdaPiso
+{
+width:auto!important;
+border-width:0px!important;
+padding-left:10px;
+}
+
+.arbol
+{
+position:absolute;
+left:10px;
+height:32px;
+width:32px;
+bottom:0px;
+background: url(images/tree1.png) no-repeat 0px 0px;
+z-index:5;
+}
+
+/*racks*/
+
+#rackInfo
+{
+width:100%;
+}
+
+.rackDetails
+{
+position:relative;
+top:0px;
+left:0px;
+width:100%;
+overflow-y:hidden;
+overflow-x:auto;
+}
+
+.rackPictures
+{
+position:absolute;
+width: 45%;
+height:100%;
+top:0%;
+left:55%;
+border:1px solid #ccc;
+overflow:hidden;
+}
+
+.UsArea
+{
+position:absolute;
+width: 5%;
+height:100%;
+top:0%;
+left:45%;
+overflow:hidden;
+}
+
+.rackPicturesLeft
+{
+position:absolute;
+width: 5%;
+height:100%;
+top:0%;
+left:50%;
+overflow:hidden;
+}
+
+.botonNewPictureRack
+{
+position:absolute;
+right:2px;
+cursor:pointer;
+}
+
+.rackLayout
+{
+position:absolute;
+width: 45%;
+bottom:0px;
+left:0px;
+border:1px solid #444;
+overflow:hidden;
+}
+
+.rackSystemName
+{
+padding-left:20px;
+font-size:10px;
+color:#666;
+}
+
+.frontUp
+{
+border-top:2px solid purple!important;
+}
+
+.frontDown
+{
+border-bottom:2px solid purple!important;
+}
+
+.frontLeft
+{
+border-left:2px solid purple!important;
+}
+
+.frontRight
+{
+border-right:2px solid purple!important;
+}
+
+.frontSelection
+{
+position:absolute;
+border:1px solid orange;
+cursor:pointer;
+height:0px;
+width:0px;
+z-index:120;
+}
+
+.changeView
+{
+text-decoration:underline;
+color:navy;
+cursor:pointer;
+}
+
+.currentView
+{
+color:purple;
+}
+
+.detallesRack
+{
+float:left;
+background: url(../../budgets/styles/images/zoom.png) no-repeat left top;
+width:16px;
+height:16px;
+cursor:pointer;
+}
+
+.botonDetallesZoom
+{
+background: url(../../budgets/styles/images/zoom.png) no-repeat left top;
+width:16px;
+height:16px;
+float:left;
+}
+
+.botonSiteCoverage
+{
+background: url(images/siteCoverage.png) no-repeat right top;
+width:16px;
+height:16px;
+padding-left:5px;
+float:left;
+}
+
+.contenedorNewPicturesRack
+{
+z-index:100;
+text-align:center;
+}
+
+.uLegend
+{
+height:10px;
+width:100%;
+padding-top:1px;
+font-size:10px;
+text-align:center;
+}
+
+.chassis
+{
+position:absolute;
+width:100%;
+border:1px solid green;
+vertical-align:center;
+text-align:center;
+background-color:white;
+}
+
+.chassisRemarcado
+{
+border-width:2px;
+}
+
+.nombreChassis
+{
+font-size:10px;
+}
+
+.chassisRemarcado .nombreChassis
+{
+font-size:12px;
+font-weight:bold;
+}
+
+.chassis.panelChassis
+{
+background-color:#eeffee;
+}
+
+.chassis.TX
+{
+border-color: purple;
+}
+.TX a
+{
+color: purple;
+}
+.TX a:hover
+{
+color: navy;
+}
+
+.chassis.IP
+{
+border-color:indigo;
+}
+.IP a
+{
+color: indigo;
+}
+.IP a:hover
+{
+color: navy;
+}
+
+.chassis.CDN
+{
+border-color:olive;
+}
+.CDN a
+{
+color: olive;
+}
+.CDN a:hover
+{
+color: navy;
+}
+
+.chassis.MGMT
+{
+border-color:burlywood;
+}
+.MGMT a
+{
+color: burlywood;
+}
+.MGMT a:hover
+{
+color: navy;
+}
+
+.chassis.VYVX
+{
+border-color:Turquoise;
+}
+.VYVX a
+{
+color: Turquoise;
+}
+.VYVX a:hover
+{
+color: navy;
+}
+
+.chassis.powerChassis
+{
+background-color:#ffF3F3;
+}
+
+.slot
+{
+position:absolute;
+border:1px solid #bbb;
+text-align:center;
+color:green;
+}
+
+.nombreSlot
+{
+position:absolute;
+width:100%;
+font-size:9px;
+top:3px;
+left:0px;
+height:12px;
+z-index:100;
+color:green;
+}
+
+.card
+{
+position:absolute;
+width:100%;
+height:100%;
+top:0px;
+bottom:0px;
+background-color:#FFCC33;
+z-index:50; 
+cursor:pointer;
+border:1px solid #777;
+opacity:0.8;
+filter:alpha(opacity=80);
+}
+
+.card.module
+{
+border:1px solid #666;
+background-color:#AA8833;
+}
+
+.cardHorizontal .nombreModulo
+{
+position:absolute;
+top:-60%;
+width:100%;
+left:0%;
+height:20px;
+color:#660033;
+font-size:9px;
+text-align:center;
+z-index:10;
+}
+
+.cardVertical .nombreModulo
+{
+position:absolute;
+top:20%;
+width:150%;
+left:-60%;
+height:20px;
+color:#660033;
+font-size:9px;
+text-align:center;
+z-index:10;
+}
+
+.contenedorTarjeta .card
+{
+opacity:1!important;
+filter:alpha(opacity=100)!important;
+background-color:white!important;
+}
+
+.contenedorTarjeta .nombrePuertoPanel
+{
+color:navy;
+font-size:9px;
+}
+
+.module.secModule
+{
+background-color:#88AA33;
+}
+
+.marcoEquipment
+{
+position:absolute;
+width:100%;
+height:100%;
+top:0px;
+left:0px;
+border:1px solid black;
+}
+
+.tarjetaSeleccionada
+{
+background-color:#CC33FF!important;
+}
+
+.contenedorTarjeta
+{
+position:absolute;
+top:0px;
+left:0px;
+}
+
+.thumbRackItem
+{
+position:absolute;
+width:100%;
+}
+
+.DWDM
+{
+background-color: #DDFFDD;
+}
+
+/*panels*/
+.picturePanel
+{
+width:42%;
+float:left;
+height:300px;
+overflow-y:auto;
+}
+
+.separacionFrontRear
+{
+width:16%;
+float:left;
+height:50px;
+font-size:15px;
+color:purple;
+text-align:center;
+}
+
+.layoutPanel
+{
+width:42%;
+float:left;
+height:50px;
+position:relative;
+}
+
+.marcoPanel
+{
+position:absolute;
+top:1%;
+left:1%;
+width:97%;
+height: 97%;
+border:1px solid black;
+}
+
+.marcoModelo
+{
+border:1px solid white;
+position:relative;
+cursor:pointer;
+}
+
+.modeloSeleccionado
+{
+border:3px solid red;
+}
+
+.opcionModelo
+{
+margin-top:20px;
+}
+
+.puertoPanel
+{
+position:absolute;
+border:1px solid #666;
+font-size:8px;
+z-index:20;
+}
+
+.nombrePuertoPanel
+{
+position:absolute;
+font-size:8px;
+text-align:center;
+z-index:10;
+}
+
+.nombrePuertos
+{
+background-color:#ccc;
+color:navy;
+font-weight:bold;
+}
+
+.portCONNECTED
+{
+background-color:#33ffff;
+color:black;
+}
+
+.tablaDiv .portCONNECTED
+{
+background-color:#99ffff;
+}
+
+.portFAULTY
+{
+background-color:black;
+color:white;
+}
+
+.portFREE
+{
+background-color:#33ff00;
+color:black;
+}
+
+.tablaDiv .portFREE
+{
+background-color:#99ff00;
+}
+
+.portOSP
+{
+background-color:#FF3300;
+color:white;
+}
+
+.opcionFAULTY
+{
+color:red;
+}
+
+.opcionFREE
+{
+color:#B9C558;
+}
+
+.opcionCONNECTED
+{
+color:#A8FFFF;
+}
+
+.botonAgruparPuertos
+{
+position:absolute;
+width:14px;
+height:14px;
+top:2px;
+right:2px;
+border-width:1px;
+border-style:solid;
+-moz-border-radius: 7px;
+border-radius: 7px;
+cursor:pointer;
+font-size:10px;
+}
+
+.agruparPuertos
+{
+color:green;
+border-color:green;
+}
+
+.desagruparPuertos
+{
+color:red;
+border-color:red;
+}
+
+.puertoMarcado
+{
+border-color:red;
+color:red;
+font-size:10px;
+font-weight:bold;
+}
+
+
+.lineaPuertoRemarcada
+{
+border:2px solid navy;
+}
+
+.lineaPuertoRemarcada .nombrePuertos
+{
+background-color:#999!important;
+color:yellow;
+}
+
+.portInfoGroup
+{
+position:absolute;
+width:40px;
+height:16px;
+top:1px;
+}
+
+.portButtons
+{
+position:absolute;
+width:40px;
+height:16px;
+top:18px;
+}
+
+.puertoSeleccionado
+{
+background-color:yellow!important;
+border-color:green!important;
+}
+
+.FrontIconsGroup
+{
+left:1px;
+text-align:left;
+}
+
+.DestIconsGroup
+{
+right:1px;
+text-align:right;
+}
+
+.DestButtonsLeft
+{
+left:1px;
+text-align:left;
+}
+
+.InIconsGroup
+{
+left:1px;
+text-align:left;
+}
+
+.RearIconsGroup
+{
+right:1px;
+text-align:right;
+}
+
+.OutIconsGroup
+{
+right:1px;
+text-align:right;
+}
+
+.botonConectar
+{
+width:16px;
+height:16px;
+background: url(images/connect.png) no-repeat left center;
+border:1px solid green;
+}
+
+.botonDuplicar
+{
+width:16px;
+height:16px;
+background: url(images/duplicate.png) no-repeat left center;
+border:1px solid green;
+}
+
+.botonDesconectar
+{
+width:16px;
+height:16px;
+background: url(images/disconnect.png) no-repeat left center;
+border:1px solid red;
+}
+
+.tablaPuertos .filaDescriptorRed
+{
+font-size:11px;
+float:left;
+padding-right:5px;
+}
+
+.tablaPuertos .descriptorFloors
+{
+display:none;
+}
+
+.tablaPuertos .descriptorRacks
+{
+display:none;
+}
+
+
+.tablaPuertos .descriptorSites .descriptorRedSecundario
+{
+display:none;
+}
+
+.tablaPuertos .descriptorRooms .descriptorRedSecundario
+{
+display:none;
+}
+
+.tablaPuertos .descriptorPanels .descriptorRedPrimario
+{
+display:none;
+}
+
+.tablaPuertos .descriptorPanelPorts .descriptorRedSecundario
+{
+display:none;
+}
+
+.tablaPuertos .descriptorOffnetPorts .descriptorRedSecundario
+{
+
+}
+
+.tablaPuertos .descriptorEqPorts .descriptorRedSecundario
+{
+display:none;
+}
+
+.botonCommentPort
+{
+position:absolute;
+bottom:2px;
+left:43%;
+}
+
+.offnetEditPort
+{
+position:absolute;
+bottom:2px;
+left:63%;
+}
+
+.riserTitle
+{
+font-size:15px;
+font-weight:bold;
+margin-top:15px;
+}
+
+.riserRoom .filaDescriptorRed
+{
+float:left;
+padding-right:10px;
+}
+
+.riserRoom .descriptorRedSecundario
+{
+padding-left:5px;
+}
+
+.riserRoom .descriptorSites
+{
+display:none;
+}
+
+.riserRoom .descriptorFloors .descriptorRedSecundario
+{
+display:none;
+}
+
+.tablaRisers .filaDescriptorRed
+{
+float:left;
+padding-right:5px;
+}
+
+.tablaRisersSite .descriptorSites
+{
+display:none;
+}
+
+.tablaRisers .descriptorRedSecundario
+{
+display:none;
+}
+
+.tablaRisersRoom .descriptorFloors
+{
+display:none;
+}
+
+.tablaRisersRoom .descriptorRooms
+{
+display:none;
+}
+
+
+.riserFree
+{
+padding:10px;
+color:green;
+}
+
+.portNotToCopy
+{display:none;}
+
+.cardNotToCopy
+{
+background-color:#999;
+text-decoration: line-through;
+}
