@@ -16,3 +16,18 @@ LIbraries to create visual representation and allow navigation across networks p
 - panels.js: Functions to display and work with panels.
 - racks.js: Functions to display and work with racks.
 - risers.js: Functions to display and work with cables.
+
+# PHP Libraries: phpLib folder
+- circuits.php: Functions to process circuits/paths on server side.
+- condicionesNetwork.php: Base queries and structures for the different network levels.
+- configNetwork.php: Definitions and base functions for the network modules.
+- copyFunctions.php: Functions to copy network elements on server side.
+- drawingISP.php: Functions for creating floorplan structures.
+- evolucion.php: Functions to work with network history on server side.
+- finder.php: Main search functions for network elements.
+- geoQueries.php: Functions to query network database.
+- getArea.php: Search for related area and base map.
+- netForms.php: Creation of basic network element addition form.
+- networkPaths.php: Creation of element descriptor structure.
+- panels.php: Functions to create panel structure and manipulate panels on server side.
+- posProcesar.php: Some actions added to specific element creations.
